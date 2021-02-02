@@ -6,7 +6,7 @@
   "scripts": {
     "postinstall": "npm run compile",
     "start": "NODE_ENV=development PREFIX=\"~\" webpack serve --host 0.0.0.0 --content-base app --history-api-fallback",
-    "compile": "NODE_ENV=production PREFIX=\"~\" webpack --display-error-details",
+    "compile": "NODE_ENV=production PREFIX=\"~\" webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
