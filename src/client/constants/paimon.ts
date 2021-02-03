@@ -49,7 +49,7 @@ export default (prefix:string):Help[] => [{
   commands: ['talent'],
   category: 'GENSHIN IMPACT',
   description: 'Show you detail about a character\'s talent',
-  examples: ['character <character name>', 'character <element name>'],
+  examples: ['talent <character name>', 'talent <element name>'],
   mentionOnly: false,
   notes: [
     `If you don't put any query bot will show you menu to browse our character gallery`,
@@ -61,7 +61,7 @@ export default (prefix:string):Help[] => [{
   commands: ['asc', 'ascension'],
   category: 'GENSHIN IMPACT',
   description: 'Show you detail about a character\'s ascension requirements',
-  examples: ['character <character name>', 'character <element name>'],
+  examples: ['ascension <character name>', 'ascension <element name>'],
   mentionOnly: false,
   notes: [
     `If you don't put any query bot will show you menu to browse our character gallery`,
