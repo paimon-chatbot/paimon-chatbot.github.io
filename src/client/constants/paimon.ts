@@ -16,9 +16,9 @@ export default (prefix:string):Help[] => [{
   notes: [
     `If you don't put any query bot will show you menu to browse our weapon gallery`,
     `Tips:\n` + 
-    `You can just write short name of the weapon like <${prefix}weapon gravestone> will result <Wolf's Gravestone>\n` +
-    `You can write initial name of weapon for easy calling like <${prefix}weapon vv> will result <Vortex Vanquisher>\n` +
-    `This command has shortform \`${PREFIX}w\` for easier access`
+    `You can just write short name of the weapon like \`${prefix}weapon gravestone\` will result <Wolf's Gravestone>\n` +
+    `You can write initial name of weapon for easy calling like \`${prefix}weapon vv\` will result <Vortex Vanquisher>\n` +
+    `This command has shortform \`${prefix}w\` for easier access`
   ]
 }, {
   commands: ['art', 'artifact'],
@@ -29,20 +29,44 @@ export default (prefix:string):Help[] => [{
   notes: [
     `If you don't put any query bot will show you menu to browse our artifact gallery`,
     `Tips:\n` +
-    `You don't need to write full name of artifact, for example <${prefix}artifact thunder> will show you result of all artifact with your query\n` +
+    `You don't need to write full name of artifact, for example \`${prefix}artifact thunder\` will show you result of all artifact with your query\n` +
     `You can tap emoji to jump to a detailed version of an artifact set\n` +
-    `This command has shortform \`${PREFIX}a\` for easier access`
+    `This command has shortform \`${prefix}a\` for easier access`
   ]
 }, {
   commands: ['char', 'character'],
   category: 'GENSHIN IMPACT',
-  description: 'Show you detail about a character\'s detail informations',
+  description: 'Show you detail about a character\'s detail and constellation',
   examples: ['character <character name>', 'character <element name>'],
   mentionOnly: false,
   notes: [
     `If you don't put any query bot will show you menu to browse our character gallery`,
     `Tips:\n` +
     `You can tap emoji to jump to talent or ascension section of a character\n` +
-    `This command has shortform \`${PREFIX}c\` for easier access`
+    `This command has shortform \`${prefix}c\` for easier access`
+  ]
+}, {
+  commands: ['talent'],
+  category: 'GENSHIN IMPACT',
+  description: 'Show you detail about a character\'s talent',
+  examples: ['character <character name>', 'character <element name>'],
+  mentionOnly: false,
+  notes: [
+    `If you don't put any query bot will show you menu to browse our character gallery`,
+    `Tips:\n` +
+    `You can tap emoji to jump to detail or ascension section of a character\n` +
+    `This command has shortform \`${prefix}c\` for easier access`
+  ]
+}, {
+  commands: ['asc', 'ascension'],
+  category: 'GENSHIN IMPACT',
+  description: 'Show you detail about a character\'s ascension requirements',
+  examples: ['character <character name>', 'character <element name>'],
+  mentionOnly: false,
+  notes: [
+    `If you don't put any query bot will show you menu to browse our character gallery`,
+    `Tips:\n` +
+    `You can tap emoji to jump to detail or talent section of a character\n` +
+    `This command has shortform \`${prefix}c\` for easier access`
   ]
 }]
