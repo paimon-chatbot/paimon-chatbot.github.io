@@ -54,8 +54,7 @@ export default (prefix:string):Help[] => [{
   notes: [
     `If you don't put any query bot will show you menu to browse our character gallery`,
     `Tips:\n` +
-    `You can tap emoji to jump to detail or ascension section of a character\n` +
-    `This command has shortform \`${prefix}c\` for easier access`
+    `You can tap emoji to jump to detail or ascension section of a character`
   ]
 }, {
   commands: ['asc', 'ascension'],
@@ -66,7 +65,6 @@ export default (prefix:string):Help[] => [{
   notes: [
     `If you don't put any query bot will show you menu to browse our character gallery`,
     `Tips:\n` +
-    `You can tap emoji to jump to detail or talent section of a character\n` +
-    `This command has shortform \`${prefix}c\` for easier access`
+    `You can tap emoji to jump to detail or talent section of a character`
   ]
 }]
