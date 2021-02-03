@@ -40,9 +40,14 @@ const useStyles = makeStyles((theme:Theme) => ({
   commandPanel: {
     background: theme.palette.background.paper,
     transition: [
-      'margin 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms',
-      'border-radius 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms'
-    ].join(', '),
+      'margin 150ms',
+      'border-radius 300ms'
+    ].map(style =>
+      `${style} cubic-bezier(0.4, 0, 0.2, 1) 0ms`
+    ).join(', '),
+    '&:before': {
+      height: 0
+    },
     '&:first-child': {
       borderTopLeftRadius: '8px',
       borderTopRightRadius: '8px'
@@ -59,16 +64,28 @@ const useStyles = makeStyles((theme:Theme) => ({
     }
   },
   commandPanelContent: {
-    position: 'relative'
+    position: 'relative',
+    '&.Mui-expanded $commandPanelHeaderBackground': {
+      backgroundColor: 'rgb(203, 197, 183)'
+    }
   },
   commandPanelHeaderBackground: {
     position: 'absolute',
     top: '4px',
     left: '4px',
-    width: 'calc(100% - 8px)',
-    height: 'calc(100% - 8px)',
+    width: 'calc(100% - 10px)',
+    height: 'calc(100% - 10px)',
     borderRadius: '6px',
-    backgroundColor: 'rgb(203, 197, 183)'
+    borderWidth: '1px',
+    borderStyle: 'solid',
+    borderColor: 'rgb(203, 197, 183)',
+    backgroundColor: 'transparent',
+    transition: [
+      'border-color 150ms',
+      'background-color 300ms'
+    ].map(style =>
+      `${style} cubic-bezier(0.4, 0, 0.2, 1) 0ms`
+    ).join(', ')
   },
   commandTitleContainer: {
     position: 'relative',
@@ -182,7 +199,7 @@ const CommandSection:React.FunctionComponent<CommandSectionProps> = (props) => {
         notQuery
       ]:[
         ...content,
-        <span key={index} style={{backgroundColor:'rgb(238, 233, 221)'}}>{found[index - 1]}</span>,
+        <span key={index} style={{backgroundColor:'rgb(203, 197, 183)'}}>{found[index - 1]}</span>,
         notQuery
       ]
     , [])
