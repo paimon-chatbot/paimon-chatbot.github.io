@@ -36,13 +36,13 @@ export default (prefix:string):Help[] => [{
 }, {
   commands: ['char', 'character'],
   category: 'GENSHIN IMPACT',
-  description: 'Show you detail about a character\'s detail and constellation',
+  description: 'Show you detail about a character',
   examples: ['character <character name>', 'character <element name>'],
   mentionOnly: false,
   notes: [
     `If you don't put any query bot will show you menu to browse our character gallery`,
     `Tips:\n` +
-    `You can tap emoji to jump to talent or ascension section of a character\n` +
+    `You can tap emoji to jump to talent, constellation, ascension or statistic section of a character\n` +
     `This command has shortform \`${prefix}c\` for easier access`
   ]
 }, {
@@ -54,7 +54,18 @@ export default (prefix:string):Help[] => [{
   notes: [
     `If you don't put any query bot will show you menu to browse our character gallery`,
     `Tips:\n` +
-    `You can tap emoji to jump to detail or ascension section of a character`
+    `You can tap emoji to jump to detail, constellation, ascension or statistic section of a character`
+  ]
+}, {
+  commands: ['cons', 'constellation'],
+  category: 'GENSHIN IMPACT',
+  description: 'Show you detail about a character\'s constellation',
+  examples: ['constellation <character name>', 'constellation <element name>'],
+  mentionOnly: false,
+  notes: [
+    `If you don't put any query bot will show you menu to browse our character gallery`,
+    `Tips:\n` +
+    `You can tap emoji to jump to detail, talent, ascension or statistic section of a character`
   ]
 }, {
   commands: ['asc', 'ascension'],
@@ -65,6 +76,17 @@ export default (prefix:string):Help[] => [{
   notes: [
     `If you don't put any query bot will show you menu to browse our character gallery`,
     `Tips:\n` +
-    `You can tap emoji to jump to detail or talent section of a character`
+    `You can tap emoji to jump to detail, talent, constellation or statistic section of a character`
+  ]
+}, {
+  commands: ['stat', 'statistic'],
+  category: 'GENSHIN IMPACT',
+  description: 'Show you detail about a character\'s status progressions',
+  examples: ['statistic <character name>', 'statistic <element name>'],
+  mentionOnly: false,
+  notes: [
+    `If you don't put any query bot will show you menu to browse our character gallery`,
+    `Tips:\n` +
+    `You can tap emoji to jump to detail, talent, constellation or ascension section of a character`
   ]
 }]
