@@ -6,6 +6,7 @@ import Typography from '@material-ui/core/Typography'
 import Button from '@material-ui/core/Button'
 
 import LeftOrnament from '../../asset/img/left-ornament.svg'
+import YoimiyaDemo from '../../asset/img/demo/yoimiya.png'
 import CharacterDemo from '../../asset/img/demo/character.png'
 import WeaponDemo from '../../asset/img/demo/weapon.png'
 import ArtifactDemo from '../../asset/img/demo/artifact.png'
@@ -112,6 +113,23 @@ const LandingPage:React.FunctionComponent = () => {
             INVITE ME
           </Button>
         </Grid>
+        <Grid container classes={{container:classes.dividerRow}}>
+          <img className={classes.dividerTextOrnament} src={LeftOrnament}/>
+          <Typography color='textPrimary' variant='h5'>
+            NEW IN AUGUST
+          </Typography>
+          <img className={[classes.dividerTextOrnament, classes.dividerTextOrnamentRight].join(' ')} src={LeftOrnament}/>
+        </Grid>
+        <DemoSection
+          demos={[{
+            headline: 'Added Yoimiya & Sayu',
+            command: `command: ${PREFIX}character`,
+            description: [
+              'Welcome Yoimiya & Sayu in Genshin 2.0'
+            ],
+            image: YoimiyaDemo
+          }]}
+        />
         <Grid container classes={{container:classes.dividerRow}}>
           <img className={classes.dividerTextOrnament} src={LeftOrnament}/>
           <Typography color='textPrimary' variant='h5'>

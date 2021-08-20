@@ -8,6 +8,9 @@ import Typography from '@material-ui/core/Typography'
 import Bullet from '../../../asset/img/bullet.svg'
 
 const useStyles = makeStyles((theme:Theme) => ({
+  demo: {
+    width: '100%'
+  },
   demoRow: {
     display: 'flex',
     padding: '32px 0'
@@ -30,6 +33,7 @@ const useStyles = makeStyles((theme:Theme) => ({
     marginRight: '12px'
   },
   description: {
+    width: '100%',
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'flex-start',
@@ -44,7 +48,7 @@ const DemoSection:React.FunctionComponent<DemoSectionProps> = (props) => {
   const classes = useStyles({})
   const {demos} = props
   return (
-    <div>
+    <div className={classes.demo}>
       {demos.map((demo, index) =>
         <Grid key={`demo-row-${index}`} container classes={{container:classes.demoRow + (index % 2 === 1? ' ' + classes.demoRowEven : '')} as any}>
           <Grid item xs={12} md={6} classes={{item:classes.demoColumn} as any}>
