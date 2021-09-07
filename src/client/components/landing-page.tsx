@@ -6,7 +6,8 @@ import Typography from '@material-ui/core/Typography'
 import Button from '@material-ui/core/Button'
 
 import LeftOrnament from '../../asset/img/left-ornament.svg'
-import YoimiyaDemo from '../../asset/img/demo/yoimiya.png'
+import RaidenDemo from '../../asset/img/demo/raiden-shogun.png'
+import ButtonDemo from '../../asset/img/demo/button.png'
 import CharacterDemo from '../../asset/img/demo/character.png'
 import WeaponDemo from '../../asset/img/demo/weapon.png'
 import ArtifactDemo from '../../asset/img/demo/artifact.png'
@@ -122,12 +123,20 @@ const LandingPage:React.FunctionComponent = () => {
         </Grid>
         <DemoSection
           demos={[{
-            headline: 'Added Yoimiya & Sayu',
-            command: `command: ${PREFIX}character`,
+            headline: 'Updated our data to 2.1',
+            command: `command: ${PREFIX}character, ${PREFIX}weapon`,
             description: [
-              'Welcome Yoimiya & Sayu in Genshin 2.0'
+              'Welcome Raiden Shogun & Kujou Sara in Genshin 2.1',
+              'We have new weapons and materials too'
             ],
-            image: YoimiyaDemo
+            image: RaidenDemo
+          }, {
+            headline: 'Updated our discord library as well',
+            command: ``,
+            description: [
+              'Now we have buttons instead of emojis'
+            ],
+            image: ButtonDemo
           }]}
         />
         <Grid container classes={{container:classes.dividerRow}}>
