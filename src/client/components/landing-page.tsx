@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography'
 import Button from '@material-ui/core/Button'
 
 import LeftOrnament from '../../asset/img/left-ornament.svg'
-import RaidenDemo from '../../asset/img/demo/raiden-shogun.png'
+import KokomiDemo from '../../asset/img/demo/kokomi.png'
 import ButtonDemo from '../../asset/img/demo/button.png'
 import CharacterDemo from '../../asset/img/demo/character.png'
 import WeaponDemo from '../../asset/img/demo/weapon.png'
@@ -117,7 +117,7 @@ const LandingPage:React.FunctionComponent = () => {
         <Grid container classes={{container:classes.dividerRow}}>
           <img className={classes.dividerTextOrnament} src={LeftOrnament}/>
           <Typography color='textPrimary' variant='h5'>
-            NEW IN AUGUST
+            NEW IN SEPTEMBER
           </Typography>
           <img className={[classes.dividerTextOrnament, classes.dividerTextOrnamentRight].join(' ')} src={LeftOrnament}/>
         </Grid>
@@ -126,10 +126,10 @@ const LandingPage:React.FunctionComponent = () => {
             headline: 'Updated our data to 2.1',
             command: `command: ${PREFIX}character, ${PREFIX}weapon`,
             description: [
-              'Welcome Raiden Shogun & Kujou Sara in Genshin 2.1',
+              'Welcome Sangonomiya Kokomi in Genshin 2.1',
               'We have new weapons and materials too'
             ],
-            image: RaidenDemo
+            image: KokomiDemo
           }, {
             headline: 'Updated our discord library as well',
             command: ``,
