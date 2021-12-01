@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography'
 import Button from '@material-ui/core/Button'
 
 import LeftOrnament from '../../asset/img/left-ornament.svg'
-import KokomiDemo from '../../asset/img/demo/kokomi.png'
+import artifactHuskDemo from '../../asset/img/demo/artifactHusk.png'
 import ButtonDemo from '../../asset/img/demo/button.png'
 import CharacterDemo from '../../asset/img/demo/character.png'
 import WeaponDemo from '../../asset/img/demo/weapon.png'
@@ -117,19 +117,19 @@ const LandingPage:React.FunctionComponent = () => {
         <Grid container classes={{container:classes.dividerRow}}>
           <img className={classes.dividerTextOrnament} src={LeftOrnament}/>
           <Typography color='textPrimary' variant='h5'>
-            NEW IN SEPTEMBER
+            NEW IN DECEMBER
           </Typography>
           <img className={[classes.dividerTextOrnament, classes.dividerTextOrnamentRight].join(' ')} src={LeftOrnament}/>
         </Grid>
         <DemoSection
           demos={[{
-            headline: 'Updated our data to 2.1',
-            command: `command: ${PREFIX}character, ${PREFIX}weapon`,
+            headline: 'Updated our data to 2.3',
+            command: `command: ${PREFIX}artifact`,
             description: [
-              'Welcome Sangonomiya Kokomi in Genshin 2.1',
-              'We have new weapons and materials too'
+              'The newest artifacts were added!',
+              'Check Husk of Opulent Dreams and Ocean-Hued Clam on our Paimon bot!'
             ],
-            image: KokomiDemo
+            image: artifactHuskDemo,           
           }, {
             headline: 'Updated our discord library as well',
             command: ``,
