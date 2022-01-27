@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography'
 import Button from '@material-ui/core/Button'
 
 import LeftOrnament from '../../asset/img/left-ornament.svg'
-import artifactHuskDemo from '../../asset/img/demo/artifactHusk.png'
+import ShenheDemo from '../../asset/img/demo/shenhe.png'
 import ButtonDemo from '../../asset/img/demo/button.png'
 import CharacterDemo from '../../asset/img/demo/character.png'
 import WeaponDemo from '../../asset/img/demo/weapon.png'
@@ -19,8 +19,7 @@ import CommandSection from './common/command-section'
 
 const useStyles = makeStyles((theme:Theme) => ({
   '@import': [
-    'url(https://fonts.googleapis.com/css?family=Source+Serif+Pro)',
-    'url(https://fonts.googleapis.com/css?family=Roboto+Mono)'
+    'url(https://fonts.googleapis.com/css?family=Roboto)'
   ] as any,
   container: {
     width: '100vw',
@@ -117,19 +116,19 @@ const LandingPage:React.FunctionComponent = () => {
         <Grid container classes={{container:classes.dividerRow}}>
           <img className={classes.dividerTextOrnament} src={LeftOrnament}/>
           <Typography color='textPrimary' variant='h5'>
-            NEW IN DECEMBER
+            NEW IN JANUARY
           </Typography>
           <img className={[classes.dividerTextOrnament, classes.dividerTextOrnamentRight].join(' ')} src={LeftOrnament}/>
         </Grid>
         <DemoSection
           demos={[{
-            headline: 'Updated our data to 2.3',
-            command: `command: ${PREFIX}artifact`,
+            headline: 'Updated our data to 2.4',
+            command: `command: ${PREFIX}character`,
             description: [
-              'The newest artifacts were added!',
-              'Check Husk of Opulent Dreams and Ocean-Hued Clam on our Paimon bot!'
+              'The newest characters are added!',
+              'Check out Shenhe and Yunjin on our Paimon bot!'
             ],
-            image: artifactHuskDemo,           
+            image: ShenheDemo,           
           }, {
             headline: 'Updated our discord library as well',
             command: ``,
