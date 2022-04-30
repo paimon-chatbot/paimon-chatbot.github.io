@@ -6,8 +6,8 @@ import Typography from '@material-ui/core/Typography'
 import Button from '@material-ui/core/Button'
 
 import LeftOrnament from '../../asset/img/left-ornament.svg'
-import MikoDemo from '../../asset/img/demo/miko.png'
-import OathswornDemo from '../../asset/img/demo/oathsworn.png'
+import AyatoDemo from '../../asset/img/demo/ayato.png'
+import HaranGeppakuDemo from '../../asset/img/demo/haran-geppaku.png'
 import CharacterDemo from '../../asset/img/demo/character.png'
 import WeaponDemo from '../../asset/img/demo/weapon.png'
 import ArtifactDemo from '../../asset/img/demo/artifact.png'
@@ -122,20 +122,20 @@ const LandingPage:React.FunctionComponent = () => {
         </Grid>
         <DemoSection
           demos={[{
-            headline: 'Updated our data to 2.5',
+            headline: 'Updated our data to 2.7',
             command: `command: ${PREFIX}character`,
             description: [
               'The newest characters are added!',
-              'Check out Lady Guuji on our Paimon bot!'
+              'Check out Kamisato Ayato on our Paimon bot!'
             ],
-            image: MikoDemo,           
+            image: AyatoDemo,           
           }, {
             headline: 'Updated our discord library as well',
             command: ``,
             description: [
               'Now we have buttons instead of emojis'
             ],
-            image: OathswornDemo
+            image: HaranGeppakuDemo
           }]}
         />
         <Grid container classes={{container:classes.dividerRow}}>
