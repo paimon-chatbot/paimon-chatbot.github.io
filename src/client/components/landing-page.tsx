@@ -6,8 +6,8 @@ import Typography from '@material-ui/core/Typography'
 import Button from '@material-ui/core/Button'
 
 import LeftOrnament from '../../asset/img/left-ornament.svg'
-import YelanDemo from '../../asset/img/demo/yelan.png'
-import AquaSimulacraDemo from '../../asset/img/demo/aqua-simulacra.png'
+import ShikanoinHeizouDemo from '../../asset/img/demo/shikanoin-heizou.png'
+import KogatsurubeIsshinDemo from '../../asset/img/demo/kogatsurube-isshin.png'
 import CharacterDemo from '../../asset/img/demo/character.png'
 import WeaponDemo from '../../asset/img/demo/weapon.png'
 import ArtifactDemo from '../../asset/img/demo/artifact.png'
@@ -116,26 +116,26 @@ const LandingPage:React.FunctionComponent = () => {
         <Grid container classes={{container:classes.dividerRow}}>
           <img className={classes.dividerTextOrnament} src={LeftOrnament}/>
           <Typography color='textPrimary' variant='h5'>
-            NEW IN JUNE
+            NEW IN AUGUST
           </Typography>
           <img className={[classes.dividerTextOrnament, classes.dividerTextOrnamentRight].join(' ')} src={LeftOrnament}/>
         </Grid>
         <DemoSection
           demos={[{
-            headline: 'Updated our data to 2.8',
+            headline: 'Updated our data to 2.9',
             command: `command: ${PREFIX}character`,
             description: [
               'The newest characters are added!',
-              'Check out Yelan on our Paimon bot!'
+              'Check out Heizou on our Paimon bot!'
             ],
-            image: YelanDemo,           
+            image: ShikanoinHeizouDemo,           
           }, {
             headline: 'Updated our discord library as well',
             command: ``,
             description: [
               'Now we have buttons instead of emojis'
             ],
-            image: AquaSimulacraDemo
+            image: KogatsurubeIsshinDemo
           }]}
         />
         <Grid container classes={{container:classes.dividerRow}}>
