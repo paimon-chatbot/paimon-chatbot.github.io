@@ -6,8 +6,8 @@ import Typography from '@material-ui/core/Typography'
 import Button from '@material-ui/core/Button'
 
 import LeftOrnament from '../../asset/img/left-ornament.svg'
-import ShikanoinHeizouDemo from '../../asset/img/demo/shikanoin-heizou.png'
-import KogatsurubeIsshinDemo from '../../asset/img/demo/kogatsurube-isshin.png'
+import TighnariDemo from '../../asset/img/demo/tighnari.png'
+import HuntersPathDemo from '../../asset/img/demo/hunters-path.png'
 import CharacterDemo from '../../asset/img/demo/character.png'
 import WeaponDemo from '../../asset/img/demo/weapon.png'
 import ArtifactDemo from '../../asset/img/demo/artifact.png'
@@ -116,26 +116,27 @@ const LandingPage:React.FunctionComponent = () => {
         <Grid container classes={{container:classes.dividerRow}}>
           <img className={classes.dividerTextOrnament} src={LeftOrnament}/>
           <Typography color='textPrimary' variant='h5'>
-            NEW IN AUGUST
+            NEW IN SEPTEMBER
           </Typography>
           <img className={[classes.dividerTextOrnament, classes.dividerTextOrnamentRight].join(' ')} src={LeftOrnament}/>
         </Grid>
         <DemoSection
           demos={[{
-            headline: 'Updated our data to 2.9',
+            headline: 'Tighnari and Collei',
             command: `command: ${PREFIX}character`,
             description: [
               'The newest characters are added!',
-              'Check out Heizou on our Paimon bot!'
+              'Check out Tighnari on our Paimon bot!'
             ],
-            image: ShikanoinHeizouDemo,           
+            image: TighnariDemo,           
           }, {
-            headline: 'Updated our discord library as well',
+            headline: '3.0 weapons and materials',
             command: ``,
             description: [
-              'Now we have buttons instead of emojis'
+              'All the stuff that comes with Sumeru!',
+              "Check out Hunters' Path"
             ],
-            image: KogatsurubeIsshinDemo
+            image: HuntersPathDemo
           }]}
         />
         <Grid container classes={{container:classes.dividerRow}}>
