@@ -6,8 +6,8 @@ import Typography from '@material-ui/core/Typography'
 import Button from '@material-ui/core/Button'
 
 import LeftOrnament from '../../asset/img/left-ornament.svg'
-import TighnariDemo from '../../asset/img/demo/tighnari.png'
-import HuntersPathDemo from '../../asset/img/demo/hunters-path.png'
+import TravelerDemo from '../../asset/img/demo/dendro-traveler.png'
+import SlashCommandDemo from '../../asset/img/demo/slash-command.png'
 import CharacterDemo from '../../asset/img/demo/character.png'
 import WeaponDemo from '../../asset/img/demo/weapon.png'
 import ArtifactDemo from '../../asset/img/demo/artifact.png'
@@ -116,27 +116,27 @@ const LandingPage:React.FunctionComponent = () => {
         <Grid container classes={{container:classes.dividerRow}}>
           <img className={classes.dividerTextOrnament} src={LeftOrnament}/>
           <Typography color='textPrimary' variant='h5'>
-            NEW IN SEPTEMBER
+            NEW IN OCTOBER
           </Typography>
           <img className={[classes.dividerTextOrnament, classes.dividerTextOrnamentRight].join(' ')} src={LeftOrnament}/>
         </Grid>
         <DemoSection
           demos={[{
-            headline: 'Tighnari and Collei',
+            headline: 'Dendro Traveler, Cyno and Candace',
             command: `command: ${PREFIX}character`,
             description: [
               'The newest characters are added!',
-              'Check out Tighnari on our Paimon bot!'
+              'Check out Dendro Traveler, Cyno and Candace on our Paimon bot!'
             ],
-            image: TighnariDemo,           
+            image: TravelerDemo,           
           }, {
-            headline: '3.0 weapons and materials',
+            headline: 'Slash Command',
             command: ``,
             description: [
-              'All the stuff that comes with Sumeru!',
-              "Check out Hunters' Path"
+              "Paimon can't read all messages sent due to privacy issue and missed out commands",
+              'Hence we taught Paimon how to use the new slash commands'
             ],
-            image: HuntersPathDemo
+            image: SlashCommandDemo
           }]}
         />
         <Grid container classes={{container:classes.dividerRow}}>
