@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography'
 import Button from '@material-ui/core/Button'
 
 import LeftOrnament from '../../asset/img/left-ornament.svg'
-import TravelerDemo from '../../asset/img/demo/dendro-traveler.png'
+import NilouDemo from '../../asset/img/demo/nilou.png'
 import SlashCommandDemo from '../../asset/img/demo/slash-command.png'
 import CharacterDemo from '../../asset/img/demo/character.png'
 import WeaponDemo from '../../asset/img/demo/weapon.png'
@@ -116,19 +116,19 @@ const LandingPage:React.FunctionComponent = () => {
         <Grid container classes={{container:classes.dividerRow}}>
           <img className={classes.dividerTextOrnament} src={LeftOrnament}/>
           <Typography color='textPrimary' variant='h5'>
-            NEW IN OCTOBER
+            NEW IN NOVEMBER
           </Typography>
           <img className={[classes.dividerTextOrnament, classes.dividerTextOrnamentRight].join(' ')} src={LeftOrnament}/>
         </Grid>
         <DemoSection
           demos={[{
-            headline: 'Dendro Traveler, Cyno and Candace',
+            headline: 'Nilou',
             command: `command: ${PREFIX}character`,
             description: [
               'The newest characters are added!',
-              'Check out Dendro Traveler, Cyno and Candace on our Paimon bot!'
+              'Check out Nilou on our Paimon bot!'
             ],
-            image: TravelerDemo,           
+            image: NilouDemo,           
           }, {
             headline: 'Slash Command',
             command: ``,
