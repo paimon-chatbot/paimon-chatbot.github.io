@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography'
 import Button from '@material-ui/core/Button'
 
 import LeftOrnament from '../../asset/img/left-ornament.svg'
-import NilouDemo from '../../asset/img/demo/nilou.png'
+import NahidaDemo from '../../asset/img/demo/nahida.png'
 import SlashCommandDemo from '../../asset/img/demo/slash-command.png'
 import CharacterDemo from '../../asset/img/demo/character.png'
 import WeaponDemo from '../../asset/img/demo/weapon.png'
@@ -94,8 +94,6 @@ const useStyles = makeStyles((theme:Theme) => ({
   }
 }))
 const LandingPage:React.FunctionComponent = () => {
-  const [{type:screenType}] = useScreenState()
-
   const classes = useStyles({})
   return (
     <div className={classes.container}>
@@ -116,19 +114,19 @@ const LandingPage:React.FunctionComponent = () => {
         <Grid container classes={{container:classes.dividerRow}}>
           <img className={classes.dividerTextOrnament} src={LeftOrnament}/>
           <Typography color='textPrimary' variant='h5'>
-            NEW IN NOVEMBER
+            NEW IN DECEMBER
           </Typography>
           <img className={[classes.dividerTextOrnament, classes.dividerTextOrnamentRight].join(' ')} src={LeftOrnament}/>
         </Grid>
         <DemoSection
           demos={[{
-            headline: 'Nilou',
+            headline: 'Nahida',
             command: `command: ${PREFIX}character`,
             description: [
               'The newest characters are added!',
-              'Check out Nilou on our Paimon bot!'
+              'Check out the Dendro archon on our Paimon bot!'
             ],
-            image: NilouDemo,           
+            image: NahidaDemo,           
           }, {
             headline: 'Slash Command',
             command: ``,
