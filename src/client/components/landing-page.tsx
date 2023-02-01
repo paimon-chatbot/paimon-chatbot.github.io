@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography'
 import Button from '@material-ui/core/Button'
 
 import LeftOrnament from '../../asset/img/left-ornament.svg'
-import WandererDemo from '../../asset/img/demo/wanderer.png'
+import AlhaithamDemo from '../../asset/img/demo/alhaitham.png'
 import SlashCommandDemo from '../../asset/img/demo/slash-command.png'
 import CharacterDemo from '../../asset/img/demo/character.png'
 import WeaponDemo from '../../asset/img/demo/weapon.png'
@@ -113,19 +113,19 @@ const LandingPage:React.FunctionComponent = () => {
         <Grid container classes={{container:classes.dividerRow}}>
           <img className={classes.dividerTextOrnament} src={LeftOrnament}/>
           <Typography color='textPrimary' variant='h5'>
-            NEW IN JANUARY
+            NEW IN FEBRUARY
           </Typography>
           <img className={[classes.dividerTextOrnament, classes.dividerTextOrnamentRight].join(' ')} src={LeftOrnament}/>
         </Grid>
         <DemoSection
           demos={[{
-            headline: 'Wanderer',
+            headline: 'Alhaitham',
             command: `command: ${PREFIX}character`,
             description: [
               'The newest characters are added!',
-              'Check out Scaramouche on our Paimon bot!'
+              'Check out Alhaitham on our Paimon bot!'
             ],
-            image: WandererDemo,           
+            image: AlhaithamDemo,           
           }, {
             headline: 'Slash Command',
             command: ``,
