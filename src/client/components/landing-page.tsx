@@ -6,7 +6,8 @@ import Typography from '@material-ui/core/Typography'
 import Button from '@material-ui/core/Button'
 
 import LeftOrnament from '../../asset/img/left-ornament.svg'
-import KiraraDemo from '../../asset/img/demo/kirara.png'
+import LyneyDemo from '../../asset/img/demo/lyney.png'
+import FirstGreatMagicDemo from '../../asset/img/demo/the-first-great-magic.png'
 import SlashCommandDemo from '../../asset/img/demo/slash-command.png'
 import CharacterDemo from '../../asset/img/demo/character.png'
 import WeaponDemo from '../../asset/img/demo/weapon.png'
@@ -113,19 +114,27 @@ const LandingPage:React.FunctionComponent = () => {
         <Grid container classes={{container:classes.dividerRow}}>
           <img className={classes.dividerTextOrnament} src={LeftOrnament}/>
           <Typography color='textPrimary' variant='h5'>
-            NEW IN AUGUST
+            NEW IN SEPTEMBER
           </Typography>
           <img className={[classes.dividerTextOrnament, classes.dividerTextOrnamentRight].join(' ')} src={LeftOrnament}/>
         </Grid>
         <DemoSection
           demos={[{
-            headline: 'Kirara',
+            headline: 'Lyney',
             command: `command: ${PREFIX}character`,
             description: [
               'The newest characters are added!',
-              'Check out Kirara on our Paimon bot!'
+              'Check out Lyney on our Paimon bot!'
             ],
-            image: KiraraDemo,           
+            image: LyneyDemo,
+          }, {
+            headline: 'The First Great Magic',
+            command: `command: ${PREFIX}weapon`,
+            description: [
+              'The newest weapons are added!',
+              'Check out the first great magic!'
+            ],
+            image: FirstGreatMagicDemo,
           }, {
             headline: 'Slash Command',
             command: ``,
